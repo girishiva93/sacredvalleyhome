@@ -8,51 +8,77 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Mada:wght@300;500;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- import css -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/navFooter.css">
+  <link rel="stylesheet" href="./css/navigation.css">
   <link rel="icon" href="./img/logo.jpg" />
 </head>
 <body>
-  <header>
-    <!-- Header and navigation -->
-    <nav>
-      <div class="logo">
-        <a href="#"><img class="logo-size" src="/img/logo.jpg" alt="Logo"></a>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top fw-bold">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="">About Team</a></li>
+                <li><a class="dropdown-item" href="">About Hotel</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Rooms
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="">Standard Rooms</a></li>
+                  <li><a class="dropdown-item" href="">Deluxe Rooms</a></li>
+                  <li><a class="dropdown-item" href="">Family Rooms</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Restaurants and Bar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'blog' %}">Attraction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'gallery' %}">Tariff</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto social_icons">
+            <div class="social_icon">
+              <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </div>
+            <div class="social_icon">
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="social_icon">
+             <a href=""><i class="fa fa-facebook " aria-hidden="true"></i></a> 
+            </div>
+            <div class="social_icon">
+              <a href="viber://chat/?number=+9779846695452"><i class="fab fa-viber " aria-hidden="true"></i></a> 
+             </div>
+          </ul>
+        </div>
       </div>
-      <div id="nav-responsive-items" class="list nav-items">
-        <ul class="items">
-          <li class="item"><a href="#">Home</a></li>
-          <li class="item"><a href="/about-us.html">About</a>
-          <!-- <ul class="submenu-items">
-                <li class="submenu-item">Everest Base Camp</li>
-                <li class="submenu-item">Everest Base Camp</li>
-                <li class="submenu-item">Everest Base Camp</li>
-            </ul> -->
-          </li>
-          
-          <li class="item"><a href="./trekking.html">Room</a>
-          </li>
-          <li class="item"><a href="/tours.html">Attraction</a></li>
-          <li class="item"><a href="#Blog">Tariff</a></li>
-          <li class="item"><a href="#contact">Contact</a></li>
-      </ul>
-      </div>
-      <div class="list nav-media-items">
-          <div class="social-media">
-            <ul class="items">
-            <li class="item"><a href="https://www.facebook.com/LeBusTransportationandService/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="item"><a href="mailto:girishiva93@gmail.com "><i class="fas fa-envelope"></i></a></li>
-            <li class="item"><a href="tel:+977 9846695452"><i class="fab fa-viber"></i></a></li>
-            </ul>
-           </div>
-      </div>
-      <div class="list responsive-button" onclick="displayList()">
-        <a href="#"><i class="fas fa-bars"></i></a>
-      </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 <section>
   <div id="modalOverlay">
     <div class="modalPopup">
@@ -112,6 +138,7 @@
 
  <script src="https://kit.fontawesome.com/0406cb8796.js" crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 <script src="./js/nav.js"></script>
 <script src="./js/popup.js"></script>
 </body>
