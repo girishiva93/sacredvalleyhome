@@ -1,6 +1,7 @@
 body {
   background: #e6e6e6;
 }
+/* pop up inside message */
 .corners {
   background: #fff;
   height: 500px;
@@ -163,3 +164,215 @@ body {
   color: #fff !important;
 }
 /* end  */
+
+/* Service */
+.mt-60 {
+  margin-top: 60px;
+}
+
+.section-block-grey {
+  padding: 90px 0px 90px 0px;
+  background-color: #f9f9f9;
+}
+
+.serv-section-2 {
+  position: relative;
+  border: 1px solid #eee;
+  background: #fff;
+  box-shadow: 0px 10px 30px 0px rgba(50, 50, 50, 0.16);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.serv-section-2:before {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  z-index: 0;
+  content: " ";
+  width: 120px;
+  height: 120px;
+  background: #f5f5f5;
+  border-bottom-left-radius: 136px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-2-icon {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  max-width: 100px;
+  z-index: 1;
+  text-align: center;
+}
+
+.serv-section-2-icon i {
+  color: #5f27cd;
+  font-size: 48px;
+  line-height: 65px;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+
+.serv-section-desc {
+  position: relative;
+}
+
+.serv-section-2 h4 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.serv-section-2 h5 {
+  color: #333;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+.section-heading-line-left {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #5f27cd;
+  border-radius: 25%;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.serv-section-2 p {
+  margin-top: 25px;
+  padding-right: 50px;
+}
+
+.serv-section-2:hover .serv-section-2-icon i {
+  color: #fff;
+}
+
+.serv-section-2:hover:before {
+  background: #5f27cd;
+}
+
+@media screen and (max-width: 576px) {
+  /* pop up */
+  #modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+  }
+  .modalPopup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    width: 100%;
+    height: 71%;
+    padding: 0 0 30px;
+    -webkit-box-shadow: 0 2px 10px 3px rgb(0 0 0 / 20%);
+    -moz-box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px 3px rgb(0 0 0 / 20%);
+  }
+  .modalContent {
+    padding: 0px;
+  }
+
+  .returnToProfile {
+    text-align: center;
+    margin: 3em;
+  }
+  .returnToProfile a,
+  .returnToProfile a:visited {
+    color: #ddd;
+  }
+  .returnToProfile a:hover {
+    color: #fff;
+  }
+
+  .pop-up__button {
+    display: inline-flex;
+    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: #fff;
+    box-shadow: 0px 14px 80px rgb(252 56 56 / 40%);
+    text-decoration: none;
+    font-weight: 500;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 1px;
+    float: initial;
+    margin-left: 25%;
+    margin-top: 5px;
+  }
+  .popup-heading {
+    font-weight: 500;
+    color: #20247b;
+    font-size: 36px;
+    margin: 5px auto;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .buttonStyle {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    background-color: transparent !important;
+    border: 0 none;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    margin-top: -37px;
+  }
+  /* end pop uo */
+  .corners {
+    background: #fff;
+    height: auto;
+    margin: 1px auto;
+    max-width: 400px;
+    line-height: 25px;
+    position: relative;
+    width: 100%;
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 11px;
+    padding-top: 0px;
+    -webkit-box-shadow: 0 1px 7px hsl(0deg 0% 0% / 20%);
+    -moz-box-shadow: 0 1px 7px hsla(0, 0%, 0%, 0.2);
+    box-shadow: 0 1px 7px hsl(0deg 0% 0% / 20%);
+    margin-top: 47px;
+  }
+
+  /* Corner Effect */
+  .corners:after,
+  .corners:before {
+    background: #e6e6e6;
+    content: "";
+    height: 50px;
+    position: absolute;
+    top: -25px;
+    width: 100px;
+    -webkit-box-shadow: 0 5px 10px -7px hsla(0, 0%, 0%, 0.5);
+    -moz-box-shadow: 0 5px 10px -7px hsla(0, 0%, 0%, 0.5);
+    box-shadow: 0 5px 10px -7px hsla(0, 0%, 0%, 0.5);
+  }
+  .corners:after {
+    display: none;
+  }
+  .corners:before {
+    display: none;
+  }
+}
