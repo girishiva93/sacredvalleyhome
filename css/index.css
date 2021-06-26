@@ -265,16 +265,34 @@ body {
 }
 
 /* Rooms */
-.transition {
-  transition: all 0.2s ease-out;
+.room-title h1 {
+  text-align: center;
 }
-
-.h-60 {
-  height: 14rem;
+.room-title p {
+  text-align: center;
+  max-width: 1000px;
+  margin-left: 4rem;
 }
-
-.w-128 {
-  width: 32rem;
+.bg-grey-lighter {
+  cursor: pointer;
+  margin-top: -1.5rem;
+}
+.view-more-room {
+  width: 200px;
+  height: 60px;
+  top: 130px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #f9f8fc;
+  border: 2.5px solid #0e172c;
+  transition: background-color 2.2s;
+  transition-duration: 3s;
+  transition: 1.5s;
+}
+.view-more-room a {
+  color: black;
 }
 
 @media screen and (max-width: 576px) {
