@@ -264,6 +264,19 @@ body {
   text-align: center;
 }
 
+/* Rooms */
+.transition {
+  transition: all 0.2s ease-out;
+}
+
+.h-60 {
+  height: 14rem;
+}
+
+.w-128 {
+  width: 32rem;
+}
+
 @media screen and (max-width: 576px) {
   /* pop up */
   #modalOverlay {
