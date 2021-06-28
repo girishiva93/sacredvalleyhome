@@ -310,18 +310,18 @@ body {
 }
 .about-section {
   overflow: hidden;
-  background: url(../img/faily.jpg) no-repeat left;
+  background: url(../img/logo.jpg) no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
   margin-top: 50px;
 }
 
 .inner-container {
-  width: 55%;
+  width: 40%;
   float: right;
   background-color: #fdfdfd;
   padding-top: 50px;
-  padding-left: 30px;
+  padding-left: 0px;
   padding-bottom: 40px;
   overflow: hidden;
 }
