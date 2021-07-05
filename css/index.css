@@ -290,6 +290,8 @@ body {
   transition: background-color 2.2s;
   transition-duration: 3s;
   transition: 1.5s;
+  margin-left: 40%;
+  margin-top: 20px;
 }
 .view-more-room a {
   color: black;
